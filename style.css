@@ -1,16 +1,16 @@
 body {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-family: "Merriweather", sans-serif;
+  font-size: 1em;
   color: #000000;
   padding: 50px;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 header {
   height: auto;
   width:auto;
-  display: flex;
-  align-items: stretch;
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
@@ -18,8 +18,8 @@ header {
 
 .nav-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 a {
@@ -28,83 +28,68 @@ a {
 }
 
 .li-nav {
-  font-size: 20px;
+  font-size: 1.5em;
   text-decoration: underline;
   list-style-type: none;
   line-height: 30px;
   color: silver;
   text-shadow: 1px 1px 1px grey;
+  padding-left: 50px;
 }
 
-.title-container {
-  position: relative;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
+.li-nav:first-of-type {
+  padding-left: 0;
 }
 
 .title {
-  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  flex-grow: 2;
-}
-
-.logo-container {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 10px;
-  flex-grow: 2;
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  flex-wrap: wrap;
+  max-width: 1000px;
 }
 
 .title-main {
   padding: 5px;
   flex-grow: 1;
-  font-size: 60px;
+  font-size: 2em;
   line-height: 80px;
-  font-family: "Merriweather", sans-serif;
   text-shadow: 2px 2px 1px;
 }
 
 .title-note {
   padding: 5px;
-  padding-bottom: 120px;
-  font-size: 36px;
+  font-size: 1.2em;
+  line-height: 48px;
   align-self: flex-end;
   color: grey;
-  font-family: "Merriweather", cursive;
   font-style: italic;
-}
-
-.logo {
-  margin: 5px;
 }
 
 .pic {
   padding: 10px;
-  position: relative;
   width: 100%;
-  height: auto;
+  height: 420px;
   background: url("img/ksen.JPG") no-repeat center center;
-  background-size: cover;
   background-color: #464646;
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin: 10px;
+}
+
 h2 {
-  font-family: "Merriweather", sans-serif;
-  font-size: 45px;
+  font-size: 2.5em;
+  line-height: 90px;
   color: #808080;
-  padding: 10px;
+  padding: 40px;
   margin-top: 60px;
-  text-align: center;
+  text-align: left;
   border-top: 2px solid silver;
   border-bottom: 2px solid silver;
 }
@@ -112,12 +97,12 @@ h2 {
 .figure-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 figcaption {
-  font-family: "Merriweather", arial, cursive;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1.1em;
   padding: 5px;
   margin-bottom: 10px;
 }
@@ -136,7 +121,7 @@ figcaption {
 .galery-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .foto {
@@ -166,6 +151,23 @@ figcaption {
   display: flex;
   justify-content: space-between;
   color: #999999;
+}
+
+#navbutton a {
+  position: absolute;
+  right: 5%;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 0 5px 5px 0;
+}
+
+#navbutton a:hover {
+  right: 5px;
+  border: 1px solid maroon;
+  border-radius: 5px;
 }
 
 /*
