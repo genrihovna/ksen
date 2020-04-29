@@ -162,6 +162,12 @@ figcaption {
   text-indent: 15px;
 }
 
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #999999;
+}
+
 /*
 body {
   padding: 0;
